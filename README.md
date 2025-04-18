@@ -1,38 +1,23 @@
-# Book Recommendation System
+# 🎬 Movie Recommendation System
 
-## Overview
-This project is a simple **content-based book recommendation system** that suggests books to users based on their preferred genre. It is implemented using Python and follows an **object-oriented approach (OOP)**.
+This is a simple **Content-Based Movie Recommendation System** built using Python. It suggests movies based on genres using TF-IDF and cosine similarity.
 
-## Features
-- **Genre-based filtering**: Recommends books based on user-inputted genres.
-- **Simple and expandable**: New books and genres can be easily added.
-- **User-friendly CLI interface**: Users input their preferred genre and receive recommendations instantly.
+## 📁 Files Included
+- `recommendation.py` - Main Python script for the recommender.
+- `movies.csv` - Sample dataset of 10 Marvel movies with genres.
+- `Movie_Recommendation_Report.pdf` - Report with explanation & sample output.
+- `README.md` - This file.
 
-## Installation
-To run this project, ensure you have Python installed. No external libraries are required.
+## 🚀 How It Works
+1. **TF-IDF Vectorization**: Converts genres into numerical vectors.
+2. **Cosine Similarity**: Measures similarity between movies based on genre.
+3. **Recommendation**: Returns the top similar movies to the input.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/book-recommendation-system.git
-   cd book-recommendation-system
-   ```
-2. Run the script:
-   ```bash
-   python recommendation_system.py
-   ```
+## 📦 Requirements
+- Python 3.x
+- pandas
+- scikit-learn
 
-## Usage
-1. The program will prompt you to enter a book genre.
-2. It will display a list of books that match your genre preference.
-
-## Example Output
-```
-Welcome to the Book Recommendation System!
-Enter a genre you're interested in (e.g., Fiction, Classic, Fantasy): Fiction
-Recommended books based on your preference for Fiction genre:
-Title: To Kill a Mockingbird, Genre: Fiction, Author: Harper Lee
-Title: The Catcher in the Rye, Genre: Fiction, Author: J.D. Salinger
-```
-
-## Contributing
-Feel free to contribute by adding more books, improving the recommendation logic, or enhancing the user experience.
+Install the required libraries with:
+```bash
+pip install pandas scikit-learn
